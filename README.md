@@ -4,13 +4,13 @@ instituições e convênios.
 
 ## Para iniciar o projeto localmente:
 
-###Clone o repositório:
+### Clone o repositório:
 ```bash
 git clone https://github.com/GuilhermeTavares21/simulador_emprestimo.git
 cd simulador_emprestimo
 ```
 
-###Inicie a API Laravel:
+### Inicie a API Laravel:
 ```bash
 cd api_comparador
 composer install
