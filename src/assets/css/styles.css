@@ -204,6 +204,12 @@ label {
   font-weight: bold;
 }
 @media (max-width:600px) {
+  .modalInfos {
+    width: 100%;
+  }
+  .head_modal{
+    height: 10vh;
+  }
   form {
     margin:0;
     width: 100%;

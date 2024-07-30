@@ -116,8 +116,14 @@ export default {
     formatCurrency(event) {
       let value = event.target.value;
       value = value.replace(/\D/g, '');
-      value = (parseFloat(value) / 100).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-      this.form.valor = value;
+      if (value) {
+        value = (parseFloat(value) / 100).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        this.form.valor = value;
+        event.target.value = value;
+      } else {
+        this.form.valor = '';
+        event.target.value = '';
+      }
     },
     formatTotal(value) {
       return value.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
