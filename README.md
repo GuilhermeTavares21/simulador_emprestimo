@@ -14,6 +14,7 @@ cd simulador_emprestimo
 ```bash
 cd api_comparador
 composer install
+php artisan serve
 ```
 
 ### Em outro terminal, vá até a pasta do repositório e inicie o Front End.
